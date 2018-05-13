@@ -115,7 +115,7 @@ def w2vTest(filename):
     file_out.close()
     print("结束时间 {:.2f} sec.".format(time.time() - start), flush=True)
     file_out2 = open("w2ccluster_res2.txt", "w", encoding="utf-8")
-    file_out2.write("被试编号 词语 \t类型号\t 词频 \n ")
+    file_out2.write("编号 词语 \t类型号\t 词频 \n ")
     i = 0
     for sentence in sentences:
         new_line = titles[i][0] + ":  "
